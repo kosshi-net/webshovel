@@ -7,13 +7,14 @@ Feel free to ask me how things work if someone somewhy decides to do something w
 
 You can try it at http://kosshi.fi/experiments/webshovel/client.html
 
-# Features
+# Features and stuff
 - It runs suprisingly well
 - World and meshing is managed by a webworker leading to zero stutter on chunk updates
 - Very basic multiplayer, terrain is synchronized and other players are visible as wireframe rectangles
 - Very smooth Swept AABB based playerphysics. There's is some bugs related to float rounding errors tho.
 - Quake-style strafe-jumping mechanics that dont work quite right, but are fun enough
 - Server can save the terrain to a disk and read it back (type ``save`` in the server cmd)
+- Over-engieneered bandwidth efficient networking
 - Placeholder options override in url, eg. ``/client.html?ip=kosshi.fi:8080``. There's a handful of option that will moslty break things, you can find them in the ``src/client/settings.js`` file
 - A lot of obscure interesting features that nobody needs (like my fancy input configs inspired by the Source engine)
 
@@ -24,7 +25,8 @@ Should work both on Linux and Windows
 - Then you need to find out what else it's missing and report about it
 - Run server.bat or ``node server.js`` in ``src/server/`` and hope it works
 ### Client
-Publish this whole thing on a web server. Note: HTTPS doesn't quite work right
+Publish this whole thing on a web server and access it on a browser.
+Note: HTTPS doesn't quite work right anymore
 
 # License
 MIT
