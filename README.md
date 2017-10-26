@@ -27,3 +27,5 @@ or ``node server.js`` in ``src/server/``
 ### Client
 Publish this whole thing on a web server. Note: HTTPS doesn't quite work right.
 
+# License
+MIT
