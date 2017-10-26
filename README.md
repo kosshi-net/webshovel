@@ -19,6 +19,7 @@ You can try it at http://kosshi.fi/experiments/webshovel/client.html
 
 # How to run it
 ### Server
+Should work both on Linux and Windows
 - You need to install Node.js and https://github.com/theturtle32/WebSocket-Node
 - Then you need to find out what else it's missing and report about it
 - Run server.bat or ``node server.js`` in ``src/server/`` and hope it works
