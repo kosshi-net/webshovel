@@ -1,6 +1,6 @@
 # Webshovel
 
-This is an abandoned start of a voxel multiplayer game engine written completetly in Javascript. The very earliest versions originate to late 2015 (i was 16 back then). It was primarily a learning tool without a goal. In summer of 2017 I decided to rewrite and redesing this in C++ and release the code.
+This is an abandoned start of a voxel multiplayer game engine written completetly in Javascript. The very earliest versions originate to late 2015 (i was 16 back then). It was primarily a learning tool without a real goal. I hoped to one day possibly to make it into a Ace of Spades 0.75 clone (thus the name). In summer of 2017 I decided to rewrite and redesing this in C++ and release the code.
 
 There is very little comments and no documentation at all.
 Feel free to ask me how things work if someone somewhy decides to do something with this.
