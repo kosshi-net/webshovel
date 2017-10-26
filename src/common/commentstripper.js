@@ -1,7 +1,6 @@
 'use strict';
 
 // Fuck regex
-// at least this is far faster than it ¯\_(ツ)_/¯
 
 class CommentStripper {
 	constructor(delete_enters){
