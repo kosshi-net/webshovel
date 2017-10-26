@@ -26,7 +26,7 @@ Should work both on Linux and Windows
 - Run server.bat or ``node server.js`` in ``src/server/`` and hope it works
 ### Client
 Publish this whole thing on a web server and access it on a browser.
-Note: HTTPS doesn't quite work right anymore
+Note: HTTPS Doesn't work. 
 
 # License
 MIT
