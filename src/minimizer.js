@@ -1,5 +1,11 @@
 'use strict';
-// var UglifyJS = require("uglify-js");
+/*
+This concats all the client's files and strips comments off it. Be sure to 
+run this script when you make changes to the client.
+There wasn't real minimizers that supported the newest javascript back then.
+
+*/
+
 const fs = require('fs');
 const CommentStripper = require('./common/commentstripper.js');
 let min = 
