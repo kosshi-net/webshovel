@@ -1,10 +1,6 @@
 /* 
 	MATH VECTOR EXTENSIONS
 	Contains some useful funtions used in some of my projects.
-
-	Vector is an array [x,y,z].
-	Functions return new arrays instead of modifying the passed ones.
-		v = Math.vec3.add(v, w);
 	
 	MIT Licensed.
 
