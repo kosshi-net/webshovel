@@ -1,0 +1,38 @@
+19.4.2016
+	Features:
+		Added simple placeholder color selection (arrows)
+
+20.4.2016
+	Minor performance improvements:
+		Everything is now its in namespace "qt" instead of global scope
+
+22.4.2016
+	Minor performance improvements:
+		ModelViewMatrix is now computed on cpu instead of gpu
+		Inlined and removed some functions in renderloop
+
+23.4.2016
+	Performance improvements:
+		Fixed a freeze in world thread
+
+25.4.2016
+	Fixed FOV slider
+
+28.8.2016
+	Major rewrite start
+
+31.8.2016
+	Main thread now in a working condition
+1.9.2016
+	Rewritten world thread
+	Hello textures!
+2.9.2016	
+	Multiple blocks!
+	Texture filterin options
+	Block placing/removing
+3.9.2016
+	Optimised rendering
+	Fixed frustum culling
+	Increased default chunkroot 16 -> 32, renders infinitetly better
+	Slightly better shading
+	Thread communication protocol improved

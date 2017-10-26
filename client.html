@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>WebGL Voxels</title>
+	<meta name="description" content="Minecraft like thing with pure WebGL">
+	<meta name="author" content="Kosshi">
+
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="layout.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+	 <img class="texture" id="tex0" src="./res/texture.png">
+	 <img class="texture" id="tex1" src="./res/font.png">
+
+	<canvas id="3d" moz-opaque></canvas>
+
+	<script src="/common/webgl-debug.js"></script>
+	<script src="./src/min.js"></script> 
+
+	<script src="./src/common/glmatrix.js"></script>
+	<script src="./src/common/vec3math.js"></script>
+	<script src="./src/common/rle.js"></script>
+	<script src="./src/common/commentstripper.js"></script>
+	<script src="./src/common/morton.js"></script>
+	<script src="./src/common/chunkhash.js"></script>
+	<script src="./src/common/worldedit.js"></script>
+	<script src="./src/common/indexfunctions.js"></script>
+	<script src="./src/common/observer.js"></script>
+
+	<script src="./src/common/packet.js"></script>
+	<script src="./src/common/packetbuffer.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+[	
+	{
+		
+	},
+	{
+
+	},
+	{
+		"name": "setblock",
+		"structure":[
+			"uint8",
+			"uint8", 
+			"uint16",
+			"uint16",
+			"uint16"
+		]
+	},
+	{
+		"name": "chatmessage",
+		"structure":[
+			"uint8",
+			"char*uint16"
+		]
+	},
+	{
+		"name": "chunkdata",
+		"structure":[
+			"uint8",
+			// XYZ
+			"int16",
+			"int16",
+			"int16",
+			// Blockdata
+			"uint8*uint16" 
+		]
+	},
+	{
+		"name": "terraindownloadreguest",
+		"structure":[
+			// Packet ID
+			"uint8"  
+		]
+	},
+	{
+		"name": "chunkdatarle",
+		"structure":[
+			// Packet ID
+			"uint8", 
+			// XYZ
+			"int16", 
+			"int16",
+			"int16",
+			// Blockdata
+			"uint8*uint16" 
+		]
+	},
+	{
+		"name": "terraindownloadfinish",
+		"structure":[
+			// Packet ID
+			"uint8"  
+		]
+	},
+	{
+		"name": "spawn_entity",
+		"structure":[
+			// Packet ID
+			"uint8",  
+			// Entity Type ID
+			"uint16",
+			// Entity ID  
+			"uint32" 
+		]
+	},
+	{
+		"name": "kill_entity",
+		"structure":[
+			// Packet ID
+			"uint8", 
+			// Kill cause, determines effects and stuff 
+			"uint8", 
+			// Entity ID
+			"uint32" 
+		]
+	},
+	{
+		"name": "server_entity_position",
+		"structure":[
+			// Packet ID
+			"uint8",  
+			// Entity ID
+			"uint32", 
+			// xyz
+			"float32", 
+			"float32", 
+			"float32",
+			 // vel
+			"float32",
+			"float32", 
+			"float32",
+			// head
+			"float32", 
+			"float32"
+		]
+	},
+	{
+		"name": "client_entity_position",
+		"structure":[
+			// Packet ID
+			"uint8",  
+			// xyz
+			"float32", 
+			"float32", 
+			"float32",
+			 // vel
+			"float32",
+			"float32", 
+			"float32",
+			// head
+			"float32", 
+			"float32"
+		]
+	}
+]
+

@@ -1,0 +1,64 @@
+[	
+	{
+		
+	},
+	{
+
+	},
+	{
+		"id": 2,
+		"name": "setblock",
+		"structure":[
+			"uint8",
+			"uint8", 
+			"uint16",
+			"uint16",
+			"uint16"
+		]
+	},
+	{
+		"id": 3,
+		"name": "chatmessage",
+		"structure":[
+			"uint8",
+			"char*uint16"
+		]
+	},
+	{
+		"id": 4,
+		"name": "chunkdata",
+		"structure":[
+			"uint8",  // Packet ID
+			"int16",
+			"int16",
+			"int16",
+			"uint8*uint16" // Blockdata
+		]
+	},
+	{
+		"id":5,
+		"name": "terraindownloadreguest",
+		"structure":[
+			"uint8"  // Packet ID
+		]
+	},
+	{
+		"id": 6,
+		"name": "chunkdatarle",
+		"structure":[
+			"uint8",  // Packet ID
+			"int16",  // xyz
+			"int16",
+			"int16",
+			"uint8*uint16" // Blockdata
+		]
+	},
+	{
+		"id":6,
+		"name": "terraindownloadfinish",
+		"structure":[
+			"uint8"  // Packet ID
+		]
+	}
+]
+

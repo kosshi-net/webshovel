@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>4tap-preprocessor</title>
+</head>
+<body>
+
+	<img class="texture" id="tex0" src="./texture.png">
+	<canvas></canvas>
+
+
+<script type="text/javascript">
+'use strict';
+
+window.onload = ()=>{ 
+
+	let image = document.querySelector('img');
+	let canvas = document.querySelector('canvas');
+	process(image, canvas);
+ };
+
+function process(image, canvas, px) {
+	px = px || 16;
+	canvas = canvas || document.createElement('canvas');
+	canvas.height = image.height*2;
+	canvas.width = image.width*2;
+	let ctx = canvas.getContext('2d');
+	for (var x = 0; x < canvas.width/px; x++)
+	for (var y = 0; y < canvas.height/px; y++) {
+		ctx.drawImage(image, px*x, px*y, px, px, x*px*2, y*px*2, px, px);
+		ctx.drawImage(image, px*x, px*y, px, px, x*px*2, y*px*2+px, px, px);
+		ctx.drawImage(image, px*x, px*y, px, px, x*px*2+px, y*px*2, px, px);
+		ctx.drawImage(image, px*x, px*y, px, px, x*px*2+px, y*px*2+px, px, px);
+	}
+
+		ctx.fillStyle = "#F00";
+		ctx.fillRect(0,32,16,16);
+		ctx.fillStyle = "#000";
+		ctx.fillRect(16,32,16,16);
+		ctx.fillStyle = "#FFF";
+		ctx.fillRect(0,48,16,16);
+		ctx.fillStyle = "#00F";
+		ctx.fillRect(16,48,16,16);
+
+}
+
+
+
+
+</script>
+</body>
+</html>

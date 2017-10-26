@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Charcheet generator</title>
+</head>
+<body>
+<canvas id='canvas'></canvas>
+<script type="text/javascript">
+'use strict';
+window.onload = function(){
+	gen(document.getElementById('canvas'));
+};
+function gen(canvas){
+	let ctx = canvas.getContext('2d');
+	let root = Math.sqrt(0xFF+1);
+	let tilesize = 32;
+
+	canvas.width = root*tilesize;
+	canvas.height = root*tilesize;
+	ctx.font = tilesize+"px Consolas";
+
+	let i = 0;
+	for (var y = 0; y < 0xF+1; y++)
+	for (var x = 0; x < 0xF+1; x++) {
+		ctx.fillText(String.fromCharCode(i),
+			x*tilesize,y*tilesize+tilesize-7);
+		i++;
+	}
+
+	let img = ctx.getImageData(0,0,root*tilesize, root*tilesize);
+
+	for (i = 0; i < Math.pow(root*tilesize, 2)*4; i+=4) {
+		img.data[i] = img.data[i+3];
+		img.data[i+1] = img.data[i+3];
+		img.data[i+2] = img.data[i+3];
+		
+	}
+
+	ctx.putImageData(img,0,0);
+}
+
+</script>
+
+</body>
+</html>
