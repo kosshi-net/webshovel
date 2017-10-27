@@ -118,39 +118,3 @@ class EntityAssembler{
 	}
 
 }
-
-
-
-
-/*
-PLAYER
-	componenets:{
-		position,
-		velocity,
-
-		playercontroller,
-		entityphysics,
-	}
-
-
-
-
-TYPES OF ENTITIES
-
-Local Player
-	- Humanoid
-	- 
-Remote Player
-	- Fully remote controlled
-Remote AI 
-	- Fully remote controlled
-Particle
-	- Fully client controlled
-Dropped items
-	
-
-*/ 
-
-
-
-
