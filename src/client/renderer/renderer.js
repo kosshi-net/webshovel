@@ -286,37 +286,12 @@ class Renderer {
 
 			gl.bindBuffer(gl.ARRAY_BUFFER, chunk.geometry.uv);
 			gl.vertexAttribPointer(this.shader.attribute.texCoord, 2, gl.FLOAT, false, 0, 0);
-
-			if( ( chunk.FLAGS & 1 << 0 ) ){
-				gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, chunk.geometry.index[0]);
-				gl.drawElements(gl.TRIANGLES , chunk.geometry.index[0].numItems, gl.UNSIGNED_SHORT, 0);
-				this.renderCalls++;
-			}
-			if( ( chunk.FLAGS & 1 << 1 ) ) {
-				gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, chunk.geometry.index[1]);
-				gl.drawElements(gl.TRIANGLES , chunk.geometry.index[1].numItems, gl.UNSIGNED_SHORT, 0);
-				this.renderCalls++;
-			}
-			if( ( chunk.FLAGS & 1 << 2 ) ) {
-				gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, chunk.geometry.index[2]);
-				gl.drawElements(gl.TRIANGLES , chunk.geometry.index[2].numItems, gl.UNSIGNED_SHORT, 0);
-				this.renderCalls++;
-			}
-			if( ( chunk.FLAGS & 1 << 3 ) ){
-				gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, chunk.geometry.index[3]);
-				gl.drawElements(gl.TRIANGLES , chunk.geometry.index[3].numItems, gl.UNSIGNED_SHORT, 0);
-				this.renderCalls++;
-			}
-			if( ( chunk.FLAGS & 1 << 4 ) ) {
-				gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, chunk.geometry.index[4]);
-				gl.drawElements(gl.TRIANGLES , chunk.geometry.index[4].numItems, gl.UNSIGNED_SHORT, 0);
-				this.renderCalls++;
-			}
-			if( ( chunk.FLAGS & 1 << 5 ) ){
-				gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, chunk.geometry.index[5]);
-				gl.drawElements(gl.TRIANGLES , chunk.geometry.index[5].numItems, gl.UNSIGNED_SHORT, 0);
-				this.renderCalls++;
-			}
+			for( var i = 0; i < 6; i++ )
+				if( ( chunk.FLAGS & 1 << i ) ){
+					gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, chunk.geometry.index[i]);
+					gl.drawElements(gl.TRIANGLES , chunk.geometry.index[i].numItems, gl.UNSIGNED_SHORT, 0);
+					this.renderCalls++;
+				}
 
 			mv = this.popMatrix();
 
