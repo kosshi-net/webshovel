@@ -43,31 +43,3 @@ class WebshovelServer{
 
 module.exports = WebshovelServer;
 
-
-
-/*
-
-Client connects
--> Verify
--> Send properties of world, blocks
--> Client downloads the map
-
-
-
-
-SERVER EVENTS
-
-on player connect
-on player disconnect
-on player terrain download request
-on player cmdtick
-	- subevents:
-		block raycast	
-		chat message
-
-on server start
-on server stop
-
-*/ 
-
-
