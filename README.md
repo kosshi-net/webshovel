@@ -17,7 +17,7 @@ You can try it at http://kosshi.fi/experiments/webshovel/client.html
 - Over-engieneered bandwidth efficient networking
 - Placeholder options override in url, eg. ``/client.html?ip=kosshi.fi:8080``. There's a handful of option that will moslty break things, you can find them in the ``src/client/settings.js`` file
 - Ugly bitmap text renderer, overlaying HTML (or anything) performs suprisingly badly
-- 4tap texturing, idea by ![0fps](https://0fps.net/2013/07/09/texture-atlases-wrapping-and-mip-mapping/)
+- 4tap texturing and culled meshing, idea and some code by [0fps](https://0fps.net/2013/07/09/texture-atlases-wrapping-and-mip-mapping/)
 - A lot of obscure interesting features that nobody needs (like my fancy input configs inspired by the Source engine)
 
 # How to run it
