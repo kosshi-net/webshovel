@@ -5,7 +5,7 @@ This is an abandoned start of a voxel multiplayer game engine written completetl
 There is very little comments and no documentation at all.
 Feel free to ask me how things work if someone somewhy decides to do something with this.
 
-You can try it at http://kosshi.fi/experiments/webshovel/client.html
+You can try it at http://kosshi.net/experiments/webshovel/client.html
 
 # Features and stuff
 - It runs suprisingly well
